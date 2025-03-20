@@ -44,6 +44,8 @@ The [UVMultiFit](https://github.com/onsala-space-observatory/UVMultiFit/blob/mas
 
 `xvfb-run -a mpicasa casa —nologger —nogui -agg -c casa_script.py`
 
+3) CASA containers with NOGRAPHICS in their names do not currently have functioning graphical interfaces.  This includes obvious features like the casaviewer (i.e., manual cleaning is not possible), but also more basic things like the logger window.  Some casa commands allow you to output information to a text file instead of the logger window, and any commands which do not require interaction with a graphical interface should continue to operate as normal.  At present this issue affects CASA versions 6.6.4 and above as well as 6.6.1-pipeline.  This issue is under active investigation.
+
 ## ALMA/CASA Adjacent Containers : Galario
 The UV data analysis package [galario](https://mtazzari.github.io/galario) is available under the radio-submm menu.  Note that this container has had minimal testing, and the uvplot package commands in the quickstart.py script are not presently working, although all preceeding commands in the quickstart.py script do work.
 
